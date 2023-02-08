@@ -1,0 +1,271 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#container {
+    margin: 0.5rem 0;
+    background-color: #ffff;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Exo', sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: .5rem 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+header h3 {
+    text-align: right;
+    color: #3a3a3a;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #3a3a3a;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    padding: 0.8rem 0.5rem;
+    text-decoration: none;
+    color: #ffff;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav li a:hover {
+    color: #3a3a3a;
+    background-color: #4c96d7;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: 1rem 0%;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #3a3a3a;
+    /* old IE */
+    background-color: #3a3a3a;
+    /* Modern Browsers */
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------------HOME-----------*/
+.center h2 {
+    position: absolute;
+    top: 180px;
+    z-index: 3;
+    font-size: 0.9rem;
+    color: #31597c;
+}
+
+.center p {
+    position: absolute;
+    top: 210px;
+    z-index: 3;
+    width: 100px;
+    font-size: 0.7rem;
+    color: #31597c;
+}
+
+.center img {
+    width: 100%;
+    padding-bottom: 1rem;
+    z-index: 0;
+}
+
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home-content h1 {
+    font-size: 1.3rem;
+}
+
+.home-content section:nth-of-type(2) {
+    grid-row: 3/4;
+}
+
+.home-content section:nth-of-type(1) {
+    grid-row: 4/5;
+}
+
+.home-content section:nth-of-type(1) section {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-content section:nth-of-type(1) section div div {
+    width: 100%;
+    height: 80px;
+    background-color: #4c96d7;
+    border-style: solid;
+    border-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.home-content section:nth-of-type(1) section div div img {
+    display: block;
+    height: 70%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home-content section:nth-of-type(1) section {
+    text-align: center;
+}
+
+.home-content section:nth-of-type(1) section div {
+    display: block;
+}
+
+/*LOGIN*/
+header h3 a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    max-width: 280px;
+}
+
+.primary {
+    max-width: 150px;
+    background-color: #4c96d7;
+    color: black;
+}
+
+.show-password {
+    background-color: #3a3a3a;
+    color: white;
+    max-width: 200px;
+    height: 40px;
+    margin-top: -15px;
+}
+
+.red {
+    color: red;
+}
+
+#inv-display {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inv-display li {
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+
+#inv-display li img {
+    max-width: 100%;
+}
+.vehicle-detail img{
+    max-width: 100%;
+}
+.vehicle-detail{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.img-small{
+    display: none;
+}
+.review{
+    background-color: lightyellow;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.review p{
+    background-color: white;
+    padding: 1rem 0.7rem 1rem 0.7rem;
+}

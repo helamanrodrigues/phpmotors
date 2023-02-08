@@ -1,0 +1,72 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+
+    /*----------- MAIN --------------*/
+
+
+
+    /*----------- FOOTER --------------*/
+    #container {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    /* For vehicle display in classification view */
+    #inv-display {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+    }
+
+    #inv-display li {
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+    .vehicle-detail{
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        column-gap: 1rem;
+    }
+    .gray{
+        background-color: rgb(225, 243, 243);
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    .img-small{
+        display: block;
+        float:left;
+        position:relative;
+    }   
+    .thumbnail{
+        width: 100%;
+    }
+    .thumbnail:hover {
+        transform: scale(2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    /* end of media query */
+}
